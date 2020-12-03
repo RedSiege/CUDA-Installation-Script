@@ -2,7 +2,7 @@ GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
 echo -e "${GREEN}\n\n[+] Updating system...\n\n${NC}"
-sudo apt update && apt upgrade -y
+sudo apt update && sudo apt upgrade -y
 echo -e "${GREEN}\n\n[+] System updated, continuing\n\n${NC}"
 
 echo -e "${GREEN}[+] Adding CUDA drivers...\n\n${NC}"
