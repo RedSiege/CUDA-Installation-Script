@@ -10,6 +10,8 @@ CUDA_REPO_PKG=cuda-repo-ubuntu1804_10.0.130-1_amd64.deb
 wget -O /tmp/${CUDA_REPO_PKG} http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/${CUDA_REPO_PKG}
 sudo dpkg -i /tmp/${CUDA_REPO_PKG}
 sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
+sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub
+sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64/7fa2af80.pub
 rm -f /tmp/${CUDA_REPO_PKG}
 
 echo -e "${GREEN}\n\n[+] Installing CUDA drivers. This may take some time...\n\n${NC}"
